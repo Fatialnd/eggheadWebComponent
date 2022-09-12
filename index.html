@@ -11,5 +11,22 @@
     <div class="root"></div>
     <script src="script.js"></script>
     <my-custom-element></my-custom-element>
+    <template id="template"> </template>
+    <custom-element>
+      <p slot="slot1">Slot 1 text</p>
+      <p slot="slot2">Slot 2 text</p>
+    </custom-element>
+    <custom-element>
+      <iframe
+        slot="slot1"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Bv_5Zv5c-Ts"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div slot="slot2">Slot 2 text inside a div</div>
+    </custom-element>
   </body>
 </html>
